@@ -1,5 +1,7 @@
 require "bundler/setup"
-require "calamari"
+require 'calamari'
+require 'calamari/client'
+require 'calamari/absence_requests/entries'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
