@@ -7,9 +7,9 @@ module Calamari
     format :json
 
     def initialize(domain: nil, api_key: nil, api_user: nil)
-      @domain = domain || ENV['CALAMARI_API_PATH']
+      @domain = domain || ENV['CALAMARI_DOMAIN']
       @api_key = api_key || ENV['CALAMARI_API_KEY']
-      @api_user = api_user || ENV['API_USER']
+      @api_user = api_user || ENV['CALAMARI_API_USER']
 
       auth = { username: @api_user, password: @api_key }
 
