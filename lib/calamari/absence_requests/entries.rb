@@ -43,6 +43,10 @@ module Calamari
         )
       end
 
+      def map
+        @entries.map { |entry| yield(entry) }
+      end
+
       def pending
         rebuild(
             @entries.select { |entry| entry.pending? }
