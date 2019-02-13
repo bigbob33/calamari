@@ -6,7 +6,7 @@ require "calamari/version"
 Gem::Specification.new do |spec|
   spec.name          = "calamari"
   spec.version       = Calamari::VERSION
-  spec.authors       = ["Michał Kosyk"]
+  spec.authors       = ["Michal Kosyk"]
   spec.email         = ["gager33@gmail.com"]
 
   spec.summary       = "A small wrapper around Calamari.io API."
