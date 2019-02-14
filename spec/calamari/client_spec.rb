@@ -16,7 +16,7 @@ RSpec.describe Calamari::Client do
 
     describe '#absence_requests_find' do
       before do
-        allow(described_class).to receive(:post).and_return(double(:httparty_response, parsed_response: []))
+        allow(described_class).to receive(:post).and_return(double(:httparty_response, parsed_response: [], ok?: true))
       end
 
       subject { client.absence_requests_find }
