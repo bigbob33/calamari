@@ -6,8 +6,8 @@ module Calamari
       attr_reader :person, :status
 
       def initialize(raw_entry)
-        @person = build_person(raw_entry[:person])
-        @status = raw_entry[:status]
+        @person = build_person(raw_entry['person'])
+        @status = raw_entry['status']
       end
 
       private
