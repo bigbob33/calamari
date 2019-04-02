@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    calamari (0.1.6)
+    calamari (0.1.7)
       httparty
 
 GEM

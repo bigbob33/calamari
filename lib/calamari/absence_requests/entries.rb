@@ -1,4 +1,5 @@
 require_relative 'entry'
+require_relative 'advanced_entry'
 
 module Calamari
   module AbsenceRequests
@@ -10,7 +11,17 @@ module Calamari
           )
         end
 
+        def build_advanced(raw_entries)
+          new(
+              raw_entries.map { |raw_entry| build_advanced_entry(raw_entry) }
+          )
+        end
+
         private
+
+        def build_advanced_entry(raw_entry)
+          AbsenceRequests::AdvancedEntry.new(raw_entry)
+        end
 
         def build_entry(raw_entry)
           AbsenceRequests::Entry.new(raw_entry)
