@@ -1,11 +1,14 @@
 require 'calamari/abscence_requests'
 require 'calamari/current_shift_status'
+require 'calamari/timesheet_entries'
 
 module Calamari
   class Client
     include HTTParty
     include Calamari::AbsenceRequests
     include Calamari::CurrentShiftStatus
+    include Calamari::TimesheetEntries
+
     format :json
 
     def initialize(domain: nil, api_key: nil, api_user: nil)

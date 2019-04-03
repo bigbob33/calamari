@@ -1,7 +1,7 @@
 require_relative 'entry'
 
 module Calamari
-  module CurrentShiftStatus
+  module TimesheetEntries
     class Entries
       class << self
         def build(raw_entries)
@@ -13,7 +13,7 @@ module Calamari
         private
 
         def build_entry(raw_entry)
-          CurrentShiftStatus::Entry.new(raw_entry)
+          TimesheetEntries::Entry.new(raw_entry)
         end
       end
 

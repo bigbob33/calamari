@@ -1,4 +1,4 @@
-require_relative 'person'
+require_relative '../shared/person'
 
 module Calamari
   module CurrentShiftStatus
@@ -13,7 +13,7 @@ module Calamari
       private
 
       def build_person(raw_person)
-        CurrentShiftStatus::Person.new(raw_person)
+        Shared::Person.new(raw_person)
       end
     end
   end

@@ -1,5 +1,5 @@
 module Calamari
-  module CurrentShiftStatus
+  module Shared
     class Person
       attr_reader :first_name, :last_name, :email, :external_id
 
